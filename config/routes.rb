@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'hashmaps' =>'main_controller#hashmaps'
 
-  get 'sparsematrix' =>'main_controller/sparsematrix'
+  get 'sparsematrix' =>'main_controller#sparsematrix'
 
   root 'main_controller#home'
 end

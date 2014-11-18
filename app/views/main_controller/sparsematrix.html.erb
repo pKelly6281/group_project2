@@ -1,3 +1,16 @@
 <% provide(:title, "Sparse Matrix")%>
-<h1>MainController#sparsematrix</h1>
-<p>Find me in app/views/main_controller/sparsematrix.html.erb</p>
+<% provide(:imageName, "Finite_element_sparse_matrix.png")%>
+<% provide(:imageLink, "http://en.wikipedia.org/wiki/Sparse_matrix#mediaviewer/File:Finite_element_sparse_matrix.png")%>
+<% provide(:imageAlt, "Sparse Matrix Data Points")%>
+
+
+<h1>Sparse Matrix Data Structure</h1>
+
+<p>In numerical analysis, a sparse matrix is a matrix in which most of the elements are zero. By contrast, if most of the elements are nonzero, then the matrix is considered dense. The fraction of zero elements (non-zero elements) in a matrix is called the sparsity (density).
+
+Conceptually, sparsity corresponds to systems which are loosely coupled. Consider a line of balls connected by springs from one to the next: this is a sparse system as only adjacent balls are coupled. By contrast, if the same line of balls had springs connecting each ball to all other balls, the system would correspond to a dense matrix. The concept of sparsity is useful in combinatorics and application areas such as network theory, which have a low density of significant data or connections.
+
+Large sparse matrices often appear in scientific or engineering applications when solving partial differential equations.
+
+When storing and manipulating sparse matrices on a computer, it is beneficial and often necessary to use specialized algorithms and data structures that take advantage of the sparse structure of the matrix. Operations using standard dense-matrix structures and algorithms are slow and inefficient when applied to large sparse matrices as processing and memory are wasted on the zeroes. Sparse data is by nature more easily compressed and thus require significantly less storage. Some very large sparse matrices are infeasible to manipulate using standard dense-matrix algorithms</p>
+

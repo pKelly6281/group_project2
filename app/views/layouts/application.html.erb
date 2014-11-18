@@ -9,7 +9,15 @@
 </head>
 <body>
  	<%= render 'layouts/header'%>
-<%= yield%>
-	<%= render 'layouts/footer'%>
+ 	<div class= "container">
+		  <%= yield%>
+		<div id="images">
+ 			<%= link_to image_tag(yield(:imageName), alt: yield(:imageAlt)),
+            yield(:imageLink)%>
+ 		</div>
+		<%= render 'layouts/footer'%>
+ 	</div>
+
+	
 </body>
 </html>
