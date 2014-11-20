@@ -10,7 +10,13 @@
 <body>
  	<%= render 'layouts/header'%>
  	<div class= "container">
-		  <%= yield%>
+
+    <h1><%= yield(:header)%></h1>
+    <div id= "wc">
+      <%= yield%>
+
+    </div>
+		  
 		<div id="images">
  			<%= link_to image_tag(yield(:imageName), alt: yield(:imageAlt)),
             yield(:imageLink)%>
